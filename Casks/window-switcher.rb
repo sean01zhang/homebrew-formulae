@@ -25,7 +25,7 @@ cask "window-switcher" do
     end
   end
 
-  depends_on macos: "12.3"
+  depends_on macos: ">= :monterey"
 
   app "Window Switcher"
 
