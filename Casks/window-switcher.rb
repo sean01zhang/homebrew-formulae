@@ -11,7 +11,7 @@ cask "window-switcher" do
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
-    url :stable
+    url :latest
     regex(/^v?(\d+(?:\.\d+)+)$/i)
     strategy :github_releases do |json, regex|
       json.map do |release|
