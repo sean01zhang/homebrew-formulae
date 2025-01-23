@@ -11,18 +11,7 @@ cask "window-switcher" do
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
-    url :latest
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-    strategy :github_releases do |json, regex|
-      json.map do |release|
-        next if release["draft"] || release["prerelease"]
-
-        match = release["tag_name"]&.match(regex)
-        next if match.blank?
-
-        match[1]
-      end
-    end
+    strategy :github_latest
   end
 
   depends_on macos: ">= :monterey"
