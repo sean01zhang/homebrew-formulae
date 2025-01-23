@@ -6,7 +6,7 @@ cask "window-switcher" do
 
   url "https://github.com/sean01zhang/window-switcher/releases/download/v#{version}/window-switcher-v#{version}.zip"
   name "window-switcher"
-  desc "Window Switcher is a simple searchable window switcher for macOS"
+  desc "Simple searchable desktop window switcher"
   homepage "https://github.com/sean01zhang/window-switcher"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
@@ -27,7 +27,7 @@ cask "window-switcher" do
 
   depends_on macos: ">= :monterey"
 
-  app "Window Switcher"
+  app "window-switcher.app"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
   # No zap stanza required
