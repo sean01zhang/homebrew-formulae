@@ -1,8 +1,8 @@
 # Documentation: https://docs.brew.sh/Cask-Cookbook
 #                https://docs.brew.sh/Adding-Software-to-Homebrew#cask-stanzas
 cask "window-switcher" do
-  version "0.2.1"
-  sha256 "44b5a95b62d1ab3a39aa7b62497366b19a5883bcf2bae1152d248c67243f86cb"
+  version "0.3.1"
+  sha256 "bb1212fe085ae9763a0c43bb8b48c54c9f403c727369e296494d5ecab83b398e"
 
   url "https://github.com/sean01zhang/window-switcher/releases/download/v#{version}/window-switcher-v#{version}.zip"
   name "window-switcher"
