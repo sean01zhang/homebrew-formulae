@@ -18,7 +18,4 @@ cask "window-switcher" do
   depends_on macos: ">= :monterey"
 
   app "window-switcher.app"
-
-  # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
-  # No zap stanza required
 end

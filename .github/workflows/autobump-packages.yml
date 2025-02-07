@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  autobump:
+    runs-on: macos-latest
+    steps:
+      - name: Tap formulae
+        run: |
+          brew tap sean01zhang/formulae
+      - name: Bump packages
+        uses: Homebrew/actions/bump-packages@master
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          # Bump only these casks if outdated
+          casks: >
+            sean01zhang/formulae/window-switcher
+          # Do not use a fork for opening PR's
+          fork: false
