@@ -6,6 +6,9 @@ jobs:
   autobump:
     runs-on: macos-latest
     steps:
+      - name: Tap formulae
+        run: |
+          brew tap sean01zhang/formulae
       - name: Bump packages
         uses: Homebrew/actions/bump-packages@master
         with:
