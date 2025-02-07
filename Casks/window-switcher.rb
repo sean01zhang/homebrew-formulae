@@ -1,5 +1,3 @@
-# Documentation: https://docs.brew.sh/Cask-Cookbook
-#                https://docs.brew.sh/Adding-Software-to-Homebrew#cask-stanzas
 cask "window-switcher" do
   version "0.3.2"
   sha256 "9590f6887f13dab769836c8764402b016ef902ed60930332931f6ad5254b2131"
@@ -9,7 +7,6 @@ cask "window-switcher" do
   desc "Simple searchable desktop window switcher"
   homepage "https://github.com/sean01zhang/window-switcher"
 
-  # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
     strategy :github_latest
   end
