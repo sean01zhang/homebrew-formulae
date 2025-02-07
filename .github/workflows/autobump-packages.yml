@@ -2,11 +2,13 @@ name: Bump Packages
 
 on:
   workflow_dispatch:
-  pull_request:
 
 jobs:
   autobump:
     runs-on: macos-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Tap formulae
         run: |
