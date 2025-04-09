@@ -19,4 +19,6 @@ jobs:
         uses: Homebrew/actions/bump-packages@master
         with:
           token: ${{secrets.GITHUB_TOKEN}}
+          casks: >
+            sean01zhang/formulae/window-switcher
           fork: false
