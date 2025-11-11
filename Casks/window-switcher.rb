@@ -1,6 +1,6 @@
 cask "window-switcher" do
-  version "0.3.6"
-  sha256 "4ed6d47275c2742edf2d5dcedd4b34a57e54ad1f7ca7f1df0f31f53b492f1d91"
+  version "0.4.0"
+  sha256 "116168c73b9b5d38d4a4a7e17f23479ba939eba2a18de646423f9dfb7c1be662"
 
   url "https://github.com/sean01zhang/window-switcher/releases/download/v#{version}/window-switcher-v#{version}.zip"
   name "window-switcher"
