@@ -1,6 +1,6 @@
 cask "window-switcher" do
-  version "0.5.3"
-  sha256 "72011835ed1e80663889aa492e4b049f324fca9a6fce26adc39a22005b5753ca"
+  version "0.5.4"
+  sha256 "5db341414cb36986a38e9e683dc48c1e63c0e142d45cbf095935ce21ca029505"
 
   url "https://github.com/sean01zhang/window-switcher/releases/download/v#{version}/window-switcher-v#{version}.zip"
   name "window-switcher"
@@ -12,7 +12,7 @@ cask "window-switcher" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "window-switcher.app"
 end
